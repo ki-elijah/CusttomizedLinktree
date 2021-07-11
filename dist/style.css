@@ -8,6 +8,8 @@ html {
 }
 
 body {
+    margin-top: 50px;
+    padding-top: 50px;
     background-color: #060042;
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(2%,#060042),color-stop(108%,#20A39E));
     background-image: url(https://img-res.s3.us-east-2.amazonaws.com/lofi.jpg);
