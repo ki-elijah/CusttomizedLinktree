@@ -25,8 +25,11 @@ body {
     width:120px
 }
 a.featured:hover,a:hover{
-    background-color:#ffffffa2;
-    color:rgb(0, 0, 0)
+    background-color:#00ccfab7;
+    color:rgb(0, 0, 0);
+    font-weight:900;
+    font-size:16px;
+    border:2px solid #fe3469;
 }
 a{
     display:block;
@@ -42,7 +45,7 @@ a{
 a.featured{
     position:relative;
     background-color:#fff;
-    color:#060042;
+    color:#02222d;
     font-weight:700
 }
 a.featured:before{
@@ -54,8 +57,14 @@ a.featured:before{
     height:calc(100% - 4px);
     border:2px solid #060042
 }
+h1{
+    font-size: 20px;;
+    text-transform:uppercase;
+    font-weight:400;
+    letter-spacing:2px
+}
 h2{
-    font-size:14px;
+    font-size:18px;
     text-transform:uppercase;
     font-weight:400;
     letter-spacing:2px
@@ -73,7 +82,7 @@ h2{
     flex:1;
     padding:5px 10px;
     margin-right:10px;
-    background-color:#00aeff7a;
+    background-color:#02222dbb;
     border:3px solid #fd9a02;
 }
 .channels a:last-child{
@@ -81,4 +90,5 @@ h2{
 }
 .channels a:hover{
     border:3px solid #01c8fb;    
+    color:#fd9a02;
 }
