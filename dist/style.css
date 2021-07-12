@@ -10,9 +10,8 @@ html {
 body {
     margin-top: 50px;
     padding-top: 50px;
-    background-color: #060042;
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(2%,#060042),color-stop(108%,#20A39E));
-    background-image: url(https://img-res.s3.us-east-2.amazonaws.com/lofi.jpg);
+    background-color: #272727;
+    background-image: url(https://img-res.s3.us-east-2.amazonaws.com/lucas.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size:center;
@@ -22,71 +21,64 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.logo {
-    width: 120px;
+.logo{
+    width:120px
+}
+a.featured:hover,a:hover{
+    background-color:#ffffffa2;
+    color:rgb(0, 0, 0)
+}
+a{
+    display:block;
+    max-width:400px;
+    margin:0 auto 15px;
+    padding:15px 20px;
+    font-size:.85rem;
+    color:#fff;
+    border:2px solid #fff;
+    text-decoration:none;
+    transition:all .2s ease-in-out
+}
+a.featured{
+    position:relative;
+    background-color:#fff;
+    color:#060042;
+    font-weight:700
+}
+a.featured:before{
+    content:"";
+    position:absolute;
+    top:2px;
+    left:2px;
+    width:calc(100% - 4px);
+    height:calc(100% - 4px);
+    border:2px solid #060042
+}
+h2{
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:400;
+    letter-spacing:2px
 }
 
-a, a.featured {    
-    &:hover {
-        background-color: #060042;
-        color: #ffffff;
-    }
+.channels{
+    display:flex;
+    max-width:400px;
+    height: 55px;
+    text-align: center;
+    vertical-align:middle;
+    margin:0 auto;
 }
-
-a {
-    display: block;
-    max-width: 400px;
-    margin: 0 auto 15px auto;
-    padding: 15px 20px;
-    font-size: 0.85rem;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    text-decoration: none;
-    transition: all 200ms ease-in-out;
-    
-    &.featured {
-        position: relative;
-        background-color: #ffffff;
-        color: #060042;
-        font-weight: bold;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 2px;
-            left: 2px;            
-            width: calc(100% - 4px);
-            height: calc(100% - 4px);
-            border: 2px solid #060042;
-        }
-    }
+.channels a{
+    flex:1;
+    padding:5px 10px;
+    margin-right:10px;
+    background-color:#00aeff7a;
+    border:3px solid #fd9a02;
 }
-
-h2 {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 2px;
+.channels a:last-child{
+    margin-right:0
 }
-
-.channels {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-    
-    a {
-        flex: 1;
-        padding: 5px 10px;
-        margin-right: 10px;
-        background-color: #060042;
-        border: none;
-
-        &:last-child {
-            margin-right: 0px;
-        }
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+.channels a:hover{
+    border:3px solid #01c8fb;    
 }
